@@ -1,4 +1,4 @@
-https://img.shields.io/github/license/vcorreasantos/one-page
+![GitHub License](https://img.shields.io/github/license/vcorreasantos/one-page)
 
 
 # CQuintas Nutri 
