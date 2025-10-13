@@ -2,8 +2,8 @@
 
 
 # CQuintas Nutri 
-Projeto da Criação de site one-page
-Site de Nutrição do Dr. Otávio Correa Quintas para divilgação
+Site one-page desenvolvido para o Dr. Otávio Corrêa Quintas, com o objetivo de divulgar seus serviços de nutrição
+e permitir o agendamento online de consultas de forma prática e moderna.
 
 # Autor:
 Vitória Cristina Corrêa dos Santos
