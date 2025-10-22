@@ -1,0 +1,67 @@
+/** 
+folha de estilo do site CQuintas Nutri
+@author Vitoria Cristina Coreea dos Santos
+*/
+
+/* Layout ********************************
+
+/* Variaveis */
+:root {
+    --verdeclaro: #7a9d8b; 
+    --verdeescuro:  #4c5757;
+    --verdemedio: #8caa95;
+    --laranjamedio: #f89827;
+    --cinzamedio: #393232;
+    --branco: #ffffff;
+    --preto: #000;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", "Poppins";
+}
+
+/* Fim - Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/*/* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*fim do smartphone portrait >>>>>>>>>>>>>>>>>>>>>>*/
+
+/* Smartphone landscape */
+@media (min-width: 576px) {
+    
+}
+/* fim smartphone landscape >>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+   
+}
+/*fim tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+/* Tablet landscape */
+@media (min-width: 992px) {
+    
+}
+/* fim do Tablet landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* Notebook/ PC - HD */
+@media (min-width: 1200px) {
+   
+}
+/* fim Notebook/ PC - HD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* Notebook/ PC / TV - Full HD ou 4K */
+@media (min-width: 1400px) {
+    
+}
+/* fim Notebook/ PC / TV - Full HD ou 4K >>>>>>>>>>>>>>>>>>>>>>>>>>*/
