@@ -1,0 +1,48 @@
+Atividade 1:
+- Escolher um cliente (real ou fictício) que necessita de um site one page
+* não pode ser um site de e-commerce
+* não pode ter login
+* não pode ter cadastros
+* não pode usar banco de dados
+* só HTML5 e CSS3 | não pode JS
+- Preencher o briefing(template modelo)
+- Criar um repositório de nome one-page
+  - Licença MIT (com selo)
+  - Título e breve descrição
+  - Autor
+
+- Separar palavras chaves (google trends)
+
+- Tipografia
+
+- Paleta de cores
+  - Imagens (separar):
+  - 1 banner principal
+    1280 x 853 ou 1920 x 1080 (pequenas variações)
+  - 1 banner background (efeito parallax)
+    1280 x 853 ou 1920 x 1080 (pequenas variações)
+  - foto destaque
+    400 x 400 (tamanho exato)
+  - ícones (redes sociais, etc)
+    48 x 48 (tamanho exato)
+  - Cartão (3 imagens)
+    338 x 264 px (tamanho exato)
+  - Logo:
+    Largura: entre 180 e 250 px
+    Altura: entre 40 e 80 px
+
+- Desenhar o layout responsivo (smartphone / pc) do projeto
+  no fotoshop(ou outra ferramenta) (site real com banner, fotos, ícones, texto etc)
+
+__________________________________________________________________________
+Entrega:
+Briefing (docx fornecido) salvar como briefing.pdf e copiar para a pasta doc
+Template do layout (fotoshop) exportar como layout.pdf ou layout.jpg para a pasta img
+
+Copiar também todas as imagens e ícones do projeto para a pasta img
+
+
+
+
+
+
