@@ -26,11 +26,35 @@ body{
     font-family: "Open Sans", "Poppins";
 }
 
+.container{
+    display: flex;
+}
+
 /* Fim - Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /*/* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 /*fim do smartphone portrait >>>>>>>>>>>>>>>>>>>>>>*/
+/*cabeçalho*/
+header {
+    height: 80px;
+    background-color: #7a9d8b;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+#check {
+    display: none; /*sempre que quiser remover alguma coisa */
+}
+
+label{
+    font-size: 3rem;
+    color: rqbq(245,245,220,0.75);
+}
 
 /* Smartphone landscape */
 @media (min-width: 576px) {
