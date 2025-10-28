@@ -42,10 +42,9 @@ header {
 }
 
 .logo img {
-    width: 100px;
-    height: 100px;
-    margin-top: 0px;
-    margin-left: 0px;
+    width: 200px;
+    height: 200px;
+    
 }
 #check {
     display: none; /*sempre que quiser remover alguma coisa */
@@ -54,9 +53,37 @@ header {
 label{
     font-size: 3rem;
     color: rgba(245,245,220,0.75);
-    cursor: pointer;
-    display: none;
+    position: fixed;
+    top: 5px;
+    right: 15px;
 }
+ nav ul {
+   list-style: none;
+   height: 100vh;
+   position: fixed;
+   top: 60px;
+   background-color: rgba(0, 128, 0, 0.486);
+   width: 65%; 
+   /*tamanho da tela que vai pegar o menu*/
+   right: -65%;
+   /*Ajustar com width*/
+   transition: all 0.5s;
+ }
+ /* açao para uma caixa check*/
+ /*quando selecionado mudar ul*/
+ #check:checked~ul {
+   right: 0px;
+ }
+ nav ul li {
+    padding: 15px;
+    border-bottom: 1px solid var(--cinzamedio);
+    text-align: right;
+ }
+
+ nav ul li a {
+    text-decoration: none;
+    color: var(--preto);
+ }
 
 
 /* Smartphone landscape */
