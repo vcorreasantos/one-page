@@ -53,8 +53,11 @@ header {
 
 label{
     font-size: 3rem;
-    color: rqbq(245,245,220,0.75);
+    color: rgba(245,245,220,0.75);
+    cursor: pointer;
+    display: none;
 }
+
 
 /* Smartphone landscape */
 @media (min-width: 576px) {
