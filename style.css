@@ -7,8 +7,8 @@ folha de estilo do site CQuintas Nutri
 
 /* Variaveis */
 :root {
-    --verdeclaro: #7a9d8b; 
-    --verdeescuro:  #4c5757;
+    --verdeclaro: #7a9d8b;
+    --verdeescuro: #4c5757;
     --verdemedio: #8caa95;
     --laranjamedio: #f89827;
     --cinzamedio: #393232;
@@ -22,11 +22,12 @@ folha de estilo do site CQuintas Nutri
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Open Sans", "Poppins";
 }
 
-.container{
+.container {
     display: flex;
 }
 
@@ -44,78 +45,249 @@ header {
 .logo img {
     width: 200px;
     height: 200px;
-    
-}
-#check {
-    display: none; /*sempre que quiser remover alguma coisa */
+
 }
 
-label{
+#check {
+    display: none;
+    /*sempre que quiser remover alguma coisa */
+}
+
+label {
     font-size: 3rem;
-    color: rgba(245,245,220,0.75);
+    color: rgba(245, 245, 220, 0.75);
     position: fixed;
     top: 5px;
     right: 15px;
 }
- nav ul {
-   list-style: none;
-   height: 100vh;
-   position: fixed;
-   top: 60px;
-   background-color: rgba(0, 128, 0, 0.486);
-   width: 65%; 
-   /*tamanho da tela que vai pegar o menu*/
-   right: -65%;
-   /*Ajustar com width*/
-   transition: all 0.5s;
- }
- /* açao para uma caixa check*/
- /*quando selecionado mudar ul*/
- #check:checked~ul {
-   right: 0px;
- }
- nav ul li {
+
+nav ul {
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    background-color: rgba(0, 128, 0, 0.486);
+    width: 65%;
+    /*tamanho da tela que vai pegar o menu*/
+    right: -65%;
+    /*Ajustar com width*/
+    transition: all 0.5s;
+}
+
+/* açao para uma caixa check*/
+/*quando selecionado mudar ul*/
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li {
     padding: 15px;
     border-bottom: 1px solid var(--cinzamedio);
     text-align: right;
- }
+}
 
- nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: var(--preto);
- }
+}
+
+/* Principal banner */
+
+main {
+    height: 95vh;
+    background: url(img/bannerprincipal.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main .container {
+    /* Relativo ao main */
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: var(--branco);
+    /* font-family */
+    font-size: 2rem;
+    text-shadow: 10px 10px 5px var(--preto), 0px 5px 5px rgb(0, 0, 0), 0px 15px 15px rgb(0, 0, 0), 0px 20px 20px rgba(0, 0, 0, 0.993);
+    margin-bottom: 10px;
+}
+
+main h2 {
+    color: var(--branco);
+    font-size: 19px;
+    font-family: OpenSans;
+    text-shadow: 10px 10px 5px var(--preto), 0px 5px 5px rgb(0, 0, 0), 0px 15px 15px rgb(0, 0, 0), 0px 20px 20px rgba(0, 0, 0, 0.993);
+    margin-bottom: 90px;
+}
 
 
 /* Smartphone landscape */
 @media (min-width: 576px) {
-    
+
+    /* layout */
+    .container {
+        max-width: 540px;
+    }
+
+    /* Cabeçario */
+    nav ul {
+        width: 35%;
+        right: -35%;
+        transition: all 0.5s;
+    }
+
+    /* Principal main */
+    main {
+        height: 70vh;
+    }
+
+    main h1 {
+        font-size: 1.95rem;
+    }
+
+    main h2 {
+        font-size: 1rem;
+    }
 }
+
+
 /* fim smartphone landscape >>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
 /* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
-   
+
+    /* layout */
+    .container {
+        max-width: 720px;
+
+    }
+
+    /* principal main */
+    main h1 {
+        font-size: 3.9rem;
+    }
+
+    main h2 {
+        font-size: 3rem;
+    }
 }
+
 /*fim tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
 /* Tablet landscape */
 @media (min-width: 992px) {
-    
+
+    /* layout */
+    .container {
+        max-width: 960px;
+    }
+
+    /* Principal main */
+
 }
+
 /* fim do Tablet landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
 /* Notebook/ PC - HD */
 @media (min-width: 1200px) {
-   
+
+    /* layout */
+    .container {
+        max-width: 960px;
+    }
+
+    /* Principal main */
+
 }
+
+/*---fim de landscape-------------------------*/
+
+/* Notebook / PC - HD*/
+@media (min-width: 1200px) {
+
+    /* layout */
+    .container {
+
+        justify-content: space-between;
+        max-width: 1140px;
+    }
+
+    /* Cabeçario */
+    header {
+        height: 100px;
+
+    }
+
+    .logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-top: 25px;
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a:hover {
+        color: var(--preto);
+
+    }
+
+    /* principol */
+    main {
+        height: 85vh;
+    }
+
+    main h1 {
+        font-size: 4rem;
+    }
+
+    main h2 {
+        font-size: 1rem;
+    }
+}
+
+
 /* fim Notebook/ PC - HD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
 /* Notebook/ PC / TV - Full HD ou 4K */
 @media (min-width: 1400px) {
-    
+
+    /* layout */
+    .container {
+        max-width: 1320px;
+    }
+
+    /* principal */
+    main h1 {
+        font-size: 6rem;
+    }
+
+    main h2 {
+        font-size: 3rem;
+        margin-bottom: 190px;
+    }
 }
+
 /* fim Notebook/ PC / TV - Full HD ou 4K >>>>>>>>>>>>>>>>>>>>>>>>>>*/
