@@ -38,14 +38,20 @@ body {
 /*fim do smartphone portrait >>>>>>>>>>>>>>>>>>>>>>*/
 /*cabeçalho*/
 header {
-    height: 80px;
-    background-color: #7a9d8b;
+    display: flex;
+    align-items: center;
+    /* centraliza verticalmente */
+    padding: 0 20px;
+    /* espaço nas laterais */
+    background-color: var(--verdemedio);
+    height: 70px;
 }
 
 .logo img {
-    width: 200px;
-    height: 200px;
-
+    height: 128px;
+    /* ajusta para caber dentro do header */
+    width: auto;
+    /* mantém proporção */
 }
 
 #check {
@@ -94,8 +100,8 @@ nav ul li a {
 /* Principal banner */
 
 main {
-    height: 95vh;
-    background: url(img/bannerprincipal.jpg);
+    height: 90vh;
+    background: url(img/bannerprincipal.png);
     background-size: cover;
     background-position: center;
 }
@@ -124,6 +130,70 @@ main h2 {
     margin-bottom: 90px;
 }
 
+/* Destaque */
+#destaque {
+    padding: 50px 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaque .container {
+    flex-direction: column;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 25px;
+}
+
+.hero-text h2 {
+    font-size: 1.6rem;
+    color: var(--branco);
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: var(--branco);
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.topic p {
+    margin-left: 15px;
+}
+
+.sobre {
+    padding: 80px 20px;
+    background-color: var(--verdeescuro);
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    color: var(--branco);
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    color: var(--branco);
+    line-height: 1.6;
+}
+
+
 
 /* Smartphone landscape */
 @media (min-width: 576px) {
@@ -135,23 +205,46 @@ main h2 {
 
     /* Cabeçario */
     nav ul {
-        width: 35%;
-        right: -35%;
-        transition: all 0.5s;
+        width: 40%;
+        right: -40%;
     }
 
     /* Principal main */
     main {
-        height: 70vh;
+        height: 75vh;
     }
 
     main h1 {
-        font-size: 1.95rem;
+        font-size: 2.75rem;
     }
 
     main h2 {
-        font-size: 1rem;
+        font-size: 2.5rem;
     }
+}
+
+/* Destaque */
+#destaque {
+    padding: 50px 0px;
+}
+
+#destaque .container {
+    flex-direction: row;
+    align-items: center;
+}
+
+#hero {
+    text-align: left;
+}
+
+#hero img {
+    width: 100px;
+    height: 100px;
+    margin: 1px 40px 0px 0px;
+}
+
+.topic {
+    display: none;
 }
 
 
@@ -200,34 +293,18 @@ main h2 {
 
     /* layout */
     .container {
-        max-width: 960px;
-    }
-
-    /* Principal main */
-
-}
-
-/*---fim de landscape-------------------------*/
-
-/* Notebook / PC - HD*/
-@media (min-width: 1200px) {
-
-    /* layout */
-    .container {
-
         justify-content: space-between;
         max-width: 1140px;
     }
 
-    /* Cabeçario */
+    /* Cabeçalho */
     header {
-        height: 100px;
-
+        height: 200px;
     }
 
     .logo img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 
     label {
@@ -239,8 +316,118 @@ main h2 {
         width: 100%;
         height: auto;
         background-color: transparent;
-        margin-top: 25px;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a:hover {
+        color: var(--preto);
+    }
+
+    /* Principal */
+    main {
+        height: 90vh;
+    }
+
+    /* Destaque */
+    #destaque {
+        /* background-attachment: fixed; */
+    }
+
+    #hero img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .topic {
+        display: flex;
+    }
+
+    .about {
+        padding: 80px 20px;
+        background-color: var(--verdeescuro);
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+        color: var(--branco);
+        margin-bottom: 20px;
+    }
+
+    .about p {
+        font-size: 1.3rem;
+        max-width: 800px;
+        margin: 0 auto 30px auto;
+        color: var(--branco);
+        line-height: 1.6;
+    }
+    
+    /* Responsivo para o vídeo */
+    
+
+}
+
+/*---fim de landscape-------------------------*/
+
+/* Notebook / PC - HD*/
+@media (min-width: 1200px) {
+
+    /* layout */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1140px;
+        /* mantém o conteúdo centralizado */
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+        /* espaçamento nas laterais */
+    }
+
+    /* Cabeçario */
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: var(--verdemedio);
+        display: flex;
+        align-items: center;
+        /* Centraliza o logo e o menu verticalmente */
+        justify-content: center;
+
+    }
+
+    .logo img {
+        width: 180px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-top: 0px;
         font-size: 1.5rem;
+        display: flex;
+        justify-content: flex-end;
+        /* menu à direita */
+        gap: 30px;
+        list-style: none;
     }
 
     nav ul li {
@@ -253,9 +440,9 @@ main h2 {
 
     }
 
-    /* principol */
+    /* principal */
     main {
-        height: 85vh;
+        height: 90vh;
     }
 
     main h1 {
