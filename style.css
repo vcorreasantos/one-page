@@ -63,8 +63,8 @@ header {
 }
 
 .logo img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 
 }
 
@@ -119,7 +119,7 @@ nav ul li a {
 main {
     height: 80vh;
     background:
-        /*linear-gradient(rgba(131, 1, 1, 0.63), rgba(53, 26, 2, 0.37)),*/
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url(img/bannerprincipal.png);
     background-size: cover;
     background-position: center;
@@ -153,7 +153,8 @@ main h2 {
 
 #destaque {
     padding: 50px 10px;
-    background: url(./img/background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(./img/background.jpg);
     background-size: cover;
     background-position: center;
 
@@ -193,7 +194,7 @@ main h2 {
 }
 
 .hero-text {
-    color: var(--branco);
+    color: var(--preto);
 }
 
 /* Sobre */
@@ -239,7 +240,9 @@ main h2 {
 
 #conteudo {
     padding: 50px 10px;
-    background: url(./img/background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        /* camada de transparência */
+        url(./img/background.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -433,8 +436,8 @@ main h2 {
     }
 
     .logo img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 
     label {
@@ -460,7 +463,7 @@ main h2 {
 
     }
 
-    /* principol */
+    /* principal */
     main {
         height: 85vh;
     }
