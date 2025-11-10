@@ -48,7 +48,27 @@ body {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.897);
 
 }
-
+/*cartao*/
+.card {
+    width: 341px;
+    right: 520px;
+    background-color: var(--verdemedio);
+    margin-top: 25px;
+    border: 2px solid var(--cinzamedio);
+    border-radius: 25px;
+}
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+.card h2 {
+    font-size: 1.3rem;
+    color: var(--cinzamedio);
+}
+.card p {
+    color: var(--branco);
+    text-align: center;
+    padding: 0px 10px 30px 10px;
+}
 
 
 /* fim do layout*********************************/
@@ -202,7 +222,9 @@ main h2 {
 #sobre {
     padding: 50px 10px;
     /* background: linear-gradient(to bottom, #f7e0c1ef, #5D4037); */
-    background: #ffffff;
+    background: linear-gradient(rgba(124, 122, 122, 0.788), rgba(139, 139, 139, 0.356)),
+        /* camada de transparência */
+        url(./img/background.jpg);
     background: var(--verdeescuro);
     background-size: cover;
     background-position: center;
@@ -226,7 +248,7 @@ main h2 {
 .sobre-text p {
     font-size: 1rem;
     color: var(--branco);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 25px;
 }
 
@@ -238,24 +260,24 @@ main h2 {
 
 /* conteudo */
 
-#conteudo {
+#planejamento {
     padding: 50px 10px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    background: linear-gradient(rgba(124, 122, 122, 0.788), rgba(0, 0, 0, 0.356)),
         /* camada de transparência */
         url(./img/background.jpg);
     background-size: cover;
     background-position: center;
 }
 
-#conteudo .container {
+#planejamento .container {
     flex-direction: column;
 }
 
-.conteudo-text {
+.planejamento-text {
     text-align: left;
 }
 
-.conteudo-text h2 {
+.planejamento-text h2 {
     margin-top: auto;
     font-size: 1.6rem;
     margin-bottom: 5px;
@@ -284,12 +306,58 @@ main h2 {
     display: none;
 }
 
-#cardapio span {
+#conteudo span {
     display: none;
 }
 
-/*fim do Smartphone----------------------------- */
+/*-------------------------cartoes-----------------------------------*/
+#conteudo {
+    background-color: var(--verdeescuro);
+    padding: 50px 0px;
+}
 
+#conteudo .container {
+    flex-direction: column;
+    text-align: center;
+}
+#conteudo .btn {
+    background-color: var(--laranjamedio);
+}
+
+/*-------------------------cartoes-----------------------------------*/
+
+
+/*fim do Smartphone portrait----------------------------- */
+
+
+
+
+/*-------------------------Rodapé---------------------*/
+address {
+    padding: 35px 0px;
+    background-color: #7a9d8b;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+address a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+address img {
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+/*------------------------- Fim do Rodapé---------------------*/
 /* smartphone landscape ----------------------*/
 @media (min-width: 576px) {
 
