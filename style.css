@@ -48,6 +48,7 @@ body {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.897);
 
 }
+
 /*cartao*/
 .card {
     width: 341px;
@@ -57,17 +58,25 @@ body {
     border: 2px solid var(--cinzamedio);
     border-radius: 25px;
 }
+
 .card img {
     border-radius: 25px 25px 0px 0px;
 }
+
 .card h2 {
     font-size: 1.3rem;
     color: var(--cinzamedio);
 }
+
 .card p {
     color: var(--branco);
     text-align: center;
     padding: 0px 10px 30px 10px;
+}
+
+.flex5 {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 
@@ -197,9 +206,15 @@ main h2 {
 
 .hero-text h2 {
     font-size: 1.6rem;
-    color: var(--preto);
+    color: var(--branco);
     margin-bottom: 15px;
 
+}
+
+.hero-text p {
+    font-size: 1rem;
+    color: var(--branco);
+    margin-bottom: 20px;
 }
 
 .topic {
@@ -211,6 +226,7 @@ main h2 {
 
 .hero p {
     margin-top: 15px;
+
 }
 
 .hero-text {
@@ -279,25 +295,26 @@ main h2 {
 
 .planejamento-text h2 {
     margin-top: auto;
-    font-size: 1.6rem;
-    margin-bottom: 5px;
-    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--branco);
 }
 
-.conteudo-text p {
+.planejamento-text p {
     color: var(--branco);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 .botao {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    background-color: var(--verdeescuro);
+    background-color: var(--laranjamedio);
     padding: 15px 30px;
-    color: var(--cinzamedio);
+    color: var(--branco);
     border-radius: 30px;
-    text-shadow: 0 0 3px rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.897);
 
 }
@@ -306,7 +323,7 @@ main h2 {
     display: none;
 }
 
-#conteudo span {
+#planejamento span {
     display: none;
 }
 
@@ -319,22 +336,18 @@ main h2 {
 #conteudo .container {
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
+
 #conteudo .btn {
     background-color: var(--laranjamedio);
 }
 
 /*-------------------------cartoes-----------------------------------*/
 
-
-/*fim do Smartphone portrait----------------------------- */
-
-
-
-
 /*-------------------------Rodapé---------------------*/
 address {
-    padding: 35px 0px;
+    padding: 35px 10px 50px 10px;
     background-color: #7a9d8b;
     background-size: cover;
     background-position: center;
@@ -350,14 +363,36 @@ address img {
     padding-top: 15px;
 }
 
+#googleMaps {
+    display: none;
+}
 
+footer {
+    padding: 50px;
+    background-color: var(--verdemedio);
+    color: #ffffff;
+    text-align: center;
+}
 
+#social {
+    margin-bottom: 25px;
+}
 
+.flex5 a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
-
-
+.flex6 {
+    display: flex;
+}
 
 /*------------------------- Fim do Rodapé---------------------*/
+
+/*fim do Smartphone portrait----------------------------- */
+
+
+
 /* smartphone landscape ----------------------*/
 @media (min-width: 576px) {
 
@@ -428,7 +463,15 @@ address img {
         border-radius: 10px;
     }
 
+    .flex5 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    #social {
+        margin: 0;
+    }
 }
 
 /*fim do landscape----------------------------*/
@@ -579,16 +622,16 @@ address img {
 
     /* conteudo */
 
-    #conteudo .container {
+    #planejamento .container {
         flex-direction: row;
-        align-items: center;
+        align-items: left;
     }
 
     #qrcode {
         display: inline;
     }
 
-    #conteudo span {
+    #planejamento span {
         display: inline;
         color: var(--branco)
     }
@@ -598,10 +641,12 @@ address img {
         height: 200px;
     }
 
-    .conteudo-text {
-        font-size: 1rem;
+    .planejamento-text {
+        font-size: 1.2rem;
     }
-
+    #googleMaps {
+        display: inline;
+    }
 }
 
 /*- fim do notebook ------------------------ */
