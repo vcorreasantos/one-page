@@ -342,8 +342,17 @@ main h2 {
 #conteudo .btn {
     background-color: var(--laranjamedio);
 }
-
-/*-------------------------cartoes-----------------------------------*/
+#todos {
+    margin-top: 50px;
+    text-align: center;
+}
+#todos a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+/*--------------------- fim dos cartoes----------------------*/
 
 /*-------------------------Rodapé---------------------*/
 address {
@@ -624,7 +633,7 @@ footer {
 
     #planejamento .container {
         flex-direction: row;
-        align-items: left;
+        align-items: center;
     }
 
     #qrcode {
