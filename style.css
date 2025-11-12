@@ -74,11 +74,21 @@ body {
     padding: 0px 10px 30px 10px;
 }
 
-.flex5 {
+/*-------------- Rodapé -------------------*/
+.rodape {
     display: flex;
     flex-direction: column-reverse;
 }
 
+.endereco {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*scroll suave*/
+html {
+    scroll-behavior: smooth;
+}
 
 /* fim do layout*********************************/
 
@@ -302,8 +312,7 @@ main h2 {
 
 .planejamento-text p {
     color: var(--branco);
-    margin-bottom: 25px;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 .botao {
@@ -311,7 +320,7 @@ main h2 {
     font-size: 1.3rem;
     font-weight: 700;
     background-color: var(--laranjamedio);
-    padding: 15px 30px;
+    padding: 10px 20px;
     color: var(--branco);
     border-radius: 30px;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
@@ -342,19 +351,22 @@ main h2 {
 #conteudo .btn {
     background-color: var(--laranjamedio);
 }
+
 #todos {
     margin-top: 50px;
     text-align: center;
 }
+
 #todos a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 700;
     font-size: 1.25rem;
 }
+
 /*--------------------- fim dos cartoes----------------------*/
 
-/*-------------------------Rodapé---------------------*/
+/*-------------------------Address---------------------*/
 address {
     padding: 35px 10px 50px 10px;
     background-color: #7a9d8b;
@@ -376,6 +388,16 @@ address img {
     display: none;
 }
 
+.endereco {
+    display: flex
+}
+
+#iconlocal {
+    display: none;
+}
+
+/*---------------------fim Address-----------------------*/
+/*---------------------- Rodapé --------------------------*/
 footer {
     padding: 50px;
     background-color: var(--verdemedio);
@@ -387,13 +409,9 @@ footer {
     margin-bottom: 25px;
 }
 
-.flex5 a {
+.rodape a {
     text-decoration: none;
     color: #ffffff;
-}
-
-.flex6 {
-    display: flex;
 }
 
 /*------------------------- Fim do Rodapé---------------------*/
@@ -472,7 +490,7 @@ footer {
         border-radius: 10px;
     }
 
-    .flex5 {
+    .rodape {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -653,9 +671,32 @@ footer {
     .planejamento-text {
         font-size: 1.2rem;
     }
+
+    #conteudo .container {
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    }
+
+    /*----------endereco------------------*/
+    address .container {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .endereco {
+        display: flex;
+    }
+
     #googleMaps {
         display: inline;
     }
+
+    #IconMapa {
+        display: none;
+    }
+
+
 }
 
 /*- fim do notebook ------------------------ */
