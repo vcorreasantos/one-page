@@ -501,17 +501,17 @@ footer .rodape {
     }
 
     /* rodapé */
-    .rodape {
-        flex-direction: row;
-        justify-content: space-between;
+    footer .rodape {
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
     }
-
-    #social {
-        margin-bottom: 0px;
-    }
-
 }
+
+#social {
+    margin-bottom: 0px;
+}
+
 
 /*fim do landscape----------------------------*/
 
@@ -703,29 +703,25 @@ footer .rodape {
 
     /*address*/
 
-    address {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-
-    #iconlocal {
-        display: inline;
-    }
-
-    #contato a {
-        display: inline
-    }
-
     #googleMaps {
         display: inline;
+    }
+
+    address .container {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    #rua a {
+        display: none;
     }
 
     #IconMapa {
         display: inline;
     }
 
+
+    /* rodape >>>>>>>>>>>>>>>>>>>>>>>>> */
     footer .rodape {
         display: flex;
         flex-direction: column-reverse;
