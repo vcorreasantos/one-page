@@ -693,9 +693,9 @@ footer {
     }
 
     #IconMapa {
-        display: none;
+        display: inline;
     }
-
+    
 
 }
 
