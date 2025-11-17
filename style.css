@@ -712,8 +712,7 @@ footer {
 
     /* Links dentro de #contato continuam normais */
     #contato a {
-        display: inline-flex;
-        align-items: center;
+        display: inline
     }
 
     /* Google Maps responsivo */
