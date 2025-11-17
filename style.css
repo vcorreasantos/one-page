@@ -25,6 +25,10 @@ folha de estilo do site CQuintas Nutri
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", "Open Sans";
 }
@@ -44,51 +48,43 @@ body {
     padding: 10px 20px;
     color: var(--branco);
     border-radius: 30px;
-    text-shadow: 0 0 10px rgba(21, 15, 12, 0.901);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.897);
 
 }
 
-/*cartao*/
+/* Cartão */
+
 .card {
     width: 341px;
-    right: 520px;
+    height: 520px;
     background-color: var(--verdemedio);
     margin-top: 25px;
-    border: 2px solid var(--cinzamedio);
     border-radius: 25px;
-}
+    border: 2px solid var(--cinzamedio);
 
-.card img {
-    border-radius: 25px 25px 0px 0px;
 }
 
 .card h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--cinzamedio);
+    margin: 15px 0px;
 }
 
 .card p {
     color: var(--branco);
-    text-align: center;
+    font-family: 'Open Sans';
+    text-align: left;
     padding: 0px 10px 30px 10px;
 }
 
-/*-------------- Rodapé -------------------*/
 .rodape {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
 }
 
-.endereco {
-    display: flex;
-    justify-content: space-around;
-}
 
-/*scroll suave*/
-html {
-    scroll-behavior: smooth;
-}
 
 /* fim do layout*********************************/
 
@@ -97,13 +93,14 @@ html {
 
 
 header {
-    height: 80px;
-    background-color: var(--verdeclaro)
+    height: 85px;
+    background-color: var(--verdeclaro);
+    text-align: center;
 }
 
 .logo img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 
 }
 
@@ -125,7 +122,7 @@ nav ul {
     height: 100vh;
     position: fixed;
     top: 80px;
-    background-color: rgba(13, 161, 99, 0.699);
+    background-color: rgba(10, 103, 10, 0.75);
     width: 65%;
     /*tamanho da tela que vai pegar o menu*/
     right: -65%;
@@ -156,10 +153,11 @@ nav ul li a {
 /* Principal banner */
 
 main {
-    height: 80vh;
+    height: 75vh;
+    height: 700px;
     background:
-        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url(img/bannerprincipal.png);
+        /* linear-gradient(rgba(5, 48, 12, 0.37), rgba(53, 26, 2, 0.37)), */
+        url(img/banneredit.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -175,7 +173,7 @@ main .container {
 main h1 {
     color: var(--branco);
     /* font-family */
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-shadow: 10px 10px 5px var(--preto), 0px 5px 5px rgb(0, 0, 0), 0px 15px 15px rgb(0, 0, 0), 0px 20px 20px rgba(0, 0, 0, 0.993);
     margin-bottom: 10px;
 }
@@ -192,8 +190,7 @@ main h2 {
 
 #destaque {
     padding: 50px 10px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(./img/background.jpg);
+    background: url(img/background.jpg);
     background-size: cover;
     background-position: center;
 
@@ -215,16 +212,11 @@ main h2 {
 }
 
 .hero-text h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--branco);
+    text-shadow: 10px 10px 5px var(--preto), 0px 5px 5px rgb(0, 0, 0), 0px 15px 15px rgb(0, 0, 0), 0px 20px 20px rgba(0, 0, 0, 0.993);
     margin-bottom: 15px;
 
-}
-
-.hero-text p {
-    font-size: 1rem;
-    color: var(--branco);
-    margin-bottom: 20px;
 }
 
 .topic {
@@ -236,22 +228,19 @@ main h2 {
 
 .hero p {
     margin-top: 15px;
-
 }
 
 .hero-text {
-    color: var(--preto);
+    color: var(--branco);
+    text-shadow: 10px 10px 5px var(--preto), 0px 5px 5px rgb(0, 0, 0), 0px 15px 15px rgb(0, 0, 0), 0px 20px 20px rgba(0, 0, 0, 0.993);
 }
 
 /* Sobre */
 
 #sobre {
-    padding: 50px 10px;
-    /* background: linear-gradient(to bottom, #f7e0c1ef, #5D4037); */
-    background: linear-gradient(rgba(124, 122, 122, 0.788), rgba(139, 139, 139, 0.356)),
-        /* camada de transparência */
-        url(./img/background.jpg);
-    background: var(--verdeescuro);
+    padding: 60px 15px;
+    background-color: var(--verdeescuro);
+    /*background: linear-gradient(to bottom, #f7e0c1ef, #5D4037);*/
     background-size: cover;
     background-position: center;
 }
@@ -268,13 +257,13 @@ main h2 {
     margin-top: auto;
     font-size: 1.6rem;
     margin-bottom: 5px;
-    color: #ffffff;
+    color: var(--branco);
 }
 
 .sobre-text p {
     font-size: 1rem;
     color: var(--branco);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 25px;
 }
 
@@ -284,7 +273,7 @@ main h2 {
     border-radius: 10px;
 }
 
-/* conteudo */
+/* planejamento */
 
 #planejamento {
     padding: 50px 10px;
@@ -305,25 +294,27 @@ main h2 {
 
 .planejamento-text h2 {
     margin-top: auto;
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
     color: var(--branco);
+    text-shadow: 10px 10px 5px var(--preto), 0px 5px 5px rgb(0, 0, 0), 0px 15px 15px rgb(0, 0, 0), 0px 20px 20px rgba(0, 0, 0, 0.993);
 }
 
 .planejamento-text p {
     color: var(--branco);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    text-shadow: 10px 10px 5px var(--preto), 0px 5px 5px rgb(0, 0, 0), 0px 15px 15px rgb(0, 0, 0), 0px 20px 20px rgba(0, 0, 0, 0.993);
 }
 
 .botao {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     background-color: var(--laranjamedio);
     padding: 10px 20px;
     color: var(--branco);
     border-radius: 30px;
-    text-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.897);
 
 }
@@ -336,7 +327,8 @@ main h2 {
     display: none;
 }
 
-/*-------------------------cartoes-----------------------------------*/
+/* Cartões */
+
 #conteudo {
     background-color: var(--verdeescuro);
     padding: 50px 0px;
@@ -348,8 +340,13 @@ main h2 {
     align-items: center;
 }
 
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
 #conteudo .btn {
     background-color: var(--laranjamedio);
+    color: var(--cinzamedio);
 }
 
 #todos {
@@ -359,19 +356,16 @@ main h2 {
 
 #todos a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--branco);
     font-weight: 700;
     font-size: 1.25rem;
 }
 
-/*--------------------- fim dos cartoes----------------------*/
 
-/*-------------------------Address---------------------*/
+/* endereco */
 address {
-    padding: 35px 10px 50px 10px;
-    background-color: #7a9d8b;
-    background-size: cover;
-    background-position: center;
+    padding: 35px 10px 50px 15px;
+    background-color: var(--verdeclaro);
     color: #ffffff;
 }
 
@@ -384,41 +378,57 @@ address img {
     padding-top: 15px;
 }
 
-#googleMaps {
-    display: none;
+address .container {
+    flex-direction: column;
 }
 
-.endereco {
-    display: flex
+#endereco {
+    padding-bottom: 30px;
+}
+
+#googleMaps {
+    display: none;
 }
 
 #iconlocal {
     display: none;
 }
 
-/*---------------------fim Address-----------------------*/
-/*---------------------- Rodapé --------------------------*/
-footer {
-    padding: 50px;
+/* Rodapé */
+
+footer .rodape {
+    padding: 20px 10px;
     background-color: var(--verdemedio);
-    color: #ffffff;
-    text-align: center;
+    color: var(--branco);
+    align-items: center;
+    display: flex;
 }
 
 #social {
     margin-bottom: 25px;
 }
 
-.rodape a {
+#copyright a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--branco);
 }
 
-/*------------------------- Fim do Rodapé---------------------*/
+.rodape a {
+    text-decoration: none;
+    color: var(--branco)
+}
 
-/*fim do Smartphone portrait----------------------------- */
+/* botão de subir */
+
+#topo {
+    position: fixed;
+    bottom: 75px;
+    right: 15px;
+}
 
 
+
+/*fim do Smartphone----------------------------- */
 
 /* smartphone landscape ----------------------*/
 @media (min-width: 576px) {
@@ -490,6 +500,7 @@ footer {
         border-radius: 10px;
     }
 
+    /* rodapé */
     .rodape {
         flex-direction: row;
         justify-content: space-between;
@@ -497,8 +508,9 @@ footer {
     }
 
     #social {
-        margin: 0;
+        margin-bottom: 0px;
     }
+
 }
 
 /*fim do landscape----------------------------*/
@@ -539,6 +551,19 @@ footer {
         border-radius: 10px;
     }
 
+    /* rodapé */
+
+    #social {
+        margin-bottom: 10px;
+    }
+
+    /* cartão */
+    #conteudo .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
 }
 
 /* fim do tablet ----------------------------*/
@@ -550,8 +575,6 @@ footer {
     .container {
         max-width: 960px;
     }
-
-    /* Principal main */
 
 }
 
@@ -574,8 +597,8 @@ footer {
     }
 
     .logo img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     label {
@@ -601,9 +624,9 @@ footer {
 
     }
 
-    /* principal */
+    /* principol */
     main {
-        height: 85vh;
+        height: 90vh;
     }
 
     main h1 {
@@ -647,7 +670,7 @@ footer {
         margin: 0px 0px 0px 50px;
     }
 
-    /* conteudo */
+    /* planejamento */
 
     #planejamento .container {
         flex-direction: row;
@@ -664,28 +687,35 @@ footer {
     }
 
     #qrcode img {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
     .planejamento-text {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
+
+    /* Cartão */
 
     #conteudo .container {
         flex-direction: row;
-        text-align: center;
-        align-items: center;
     }
 
-    /*----------endereco------------------*/
-    address .container {
+    /*address*/
+
+    address {
+        display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
+        align-items: flex-start;
     }
 
-    .endereco {
-        display: flex;
+    #iconlocal {
+        display: inline;
+    }
+
+    #contato a {
+        display: inline
     }
 
     #googleMaps {
@@ -695,8 +725,12 @@ footer {
     #IconMapa {
         display: inline;
     }
-    
 
+    footer .rodape {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 /*- fim do notebook ------------------------ */
